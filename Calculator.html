@@ -1,0 +1,116 @@
+<html>
+    <body>
+        <h1 align="center">Calculator</h1>
+        <P align="center"> 
+         </label>
+         <input type="text" id="calc">
+        </label></P>
+    
+  
+        <div align="center" class="con"><div align="center"><button id="j">1</button>..
+            <button id="j1" class="j2">2</button>..
+            <button id="j2">3</button>..
+            <button id="j3">+</button></div><br>
+            <div align="center"><button id="j4">4</button>..
+                <button id="j5">5</button>..
+                <button id="j6">6</button>..
+                <button id="j7">x</button></div><br>
+                <div align="center"><button id="j11">7</button>..
+                    <button id="j8">8</button>..
+                    <button id="j9">9</button>..
+                    <button id="j10">-</button><br><br>
+                    <button id="j12">/</button>
+                    <button id="j23" onclick="j23()">=</button></div></div>
+    </body>
+<style>
+    
+    button{font-size:35px;border-radius:112px;}
+    input{font-size: 20px;}
+    
+</style>
+<script>
+j1.addEventListener('click',function(){
+var x1=document.getElementById("j1")
+var x=document.getElementById("calc");
+var n2="2"
+return x.value=x.value+parseInt(n2)
+})
+j.addEventListener('click',function(){
+var x1=document.getElementById("j")
+var x=document.getElementById("calc");
+var n1="1"
+return x.value=x.value+parseInt(n1)
+})
+j2.addEventListener('click',function(){
+var x1=document.getElementById("j2")
+var x=document.getElementById("calc");
+var n3="3"
+return x.value=x.value+parseInt(n3)
+})
+j4.addEventListener('click',function(){
+var x1=document.getElementById("j4")
+var x=document.getElementById("calc");
+var n4="4"
+return x.value=x.value+parseInt(n4)
+})
+j5.addEventListener('click',function(){
+var x1=document.getElementById("j5")
+var x=document.getElementById("calc");
+var n5="5"
+return x.value=x.value+parseInt(n5)
+})
+j6.addEventListener('click',function(){
+var x1=document.getElementById("j6")
+var x=document.getElementById("calc");
+var n5="6"
+return x.value=x.value+parseInt(n5)
+})
+j11.addEventListener('click',function(){
+var x1=document.getElementById("j11")
+var x=document.getElementById("calc");
+var n5="7"
+return x.value=x.value+parseInt(n5)
+})
+j8.addEventListener('click',function(){
+var x1=document.getElementById("j8")
+var x=document.getElementById("calc");
+var n5="8"
+return x.value=x.value+parseInt(n5)
+})
+j9.addEventListener('click',function(){
+var x1=document.getElementById("j9")
+var x=document.getElementById("calc");
+var n5="9"
+return x.value=x.value+parseInt(n5)
+})
+j3.addEventListener('click',function(){
+var x1=document.getElementById("j3")
+var x=document.getElementById("calc");
+var n5="+"
+return x.value=x.value+"+"
+})
+j12.addEventListener('click',function(){
+var x1=document.getElementById("j12")
+var x=document.getElementById("calc");
+var n5="+"
+return x.value=x.value+"/"
+})
+j7.addEventListener('click',function(){
+var x1=document.getElementById("j7")
+var x=document.getElementById("calc");
+var n5="+"
+return x.value=x.value+"*"
+})
+j10.addEventListener('click',function(){
+var x1=document.getElementById("j10")
+var x=document.getElementById("calc");
+var n5="+"
+return x.value=x.value+"-"
+})
+function j23(){
+    var x=document.getElementById("calc").value;
+    var m=document.getElementById("calc").value=eval(x);
+    return x
+}
+</script>
+    </html>
